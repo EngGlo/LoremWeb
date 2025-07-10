@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lorem Creative Prints - Cyber and Prints</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #FF5733;
+            /* Vibrant orange from the poster */
+            --secondary: #3498db;
+            /* Blue color from "LOREM" */
+            --accent: #000000;
+            /* Black accent color */
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                }
+       .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo-image {
+    margin-right: 10px;
+}
+
+.logo-image img {
+    max-height: 60px;
+    width: auto;
+}
+
+.logo span {
+    font-weight: normal;
+    margin-left: 5px;
+}
+        
+
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--dark);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+        }
+
+  /* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('images/bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 180px 0 120px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 24, 97, 0.85), rgba(0, 24, 97, 0.7)); /* Dark blue gradient overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 22px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 14px 34px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: var(--dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+        /* Services Section */
+        .services {
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .services-column {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .services-column h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .service-item {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .service-item:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-size: 18px;
+        }
+
+        /* Products Section */
+       
+.product-showcase {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product-item {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-name {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+        /* How It Works */
+        .how-it-works {
+            background-color: white;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            counter-reset: step-counter;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            background-color: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+.contact {
+    background-color: #f0f2f5;
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-methods {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.contact-card {
+    background-color: #001861;
+    color: white;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-container {
+    margin-bottom: 15px;
+}
+
+.icon-container i {
+    font-size: 28px;
+    color: white;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 8px 0;
+    width: 100%;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #001861;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #001861;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #000e38;
+}
+
+
+        /* Footer */
+        footer {
+            background-color: var(--accent);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Upload Form */
+        .upload-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .file-upload {
+            border: 2px dashed #ddd;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .file-upload:hover {
+            border-color: var(--secondary);
+        }
+        /* Portfolio Section Styles */
+    .portfolio {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .section-title h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .section-title p {
+        color: #777;
+    }
+    
+    /* Portfolio Navigation */
+    .portfolio-nav {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .portfolio-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .portfolio-nav li {
+        padding: 8px 15px;
+        margin: 5px;
+        cursor: pointer;
+        background-color: #eee;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    .portfolio-nav li:hover,
+    .portfolio-nav li.active {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    /* Portfolio Items */
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .portfolio-item {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .portfolio-item:hover {
+        transform: translateY(-10px);
+    }
+    
+    .item-image {
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .item-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .portfolio-item:hover .item-image img {
+        transform: scale(1.1);
+    }
+    
+    .item-details {
+        padding: 20px;
+    }
+    
+    .item-details h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: #333;
+    }
+    
+    .price-options {
+        margin-bottom: 15px;
+    }
+    
+    .option {
+        margin-bottom: 10px;
+    }
+    
+    .option h4 {
+        margin: 0 0 5px;
+        font-size: 16px;
+        color: #555;
+    }
+    
+    .option p {
+        margin: 0;
+        color: #777;
+    }
+    
+    .discount {
+        color: #e74c3c;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .order-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .order-button:hover {
+        background-color: #555;
+    }
+    
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        margin: 5% auto;
+        padding: 30px;
+        border-radius: 8px;
+        width: 70%;
+        max-width: 700px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .close-modal {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close-modal:hover {
+        color: #333;
+    }
+    
+    #orderForm {
+        margin-top: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    .price-summary {
+        margin: 20px 0;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+    
+    .price-summary h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .price-summary p {
+        margin: 5px 0;
+    }
+    
+    .submit-button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .submit-button:hover {
+        background-color: #555;
+    }
+    
+     /* Team Leadership Section Styles */
+    .team-leadership {
+        padding: 60px 0;
+        background-color: #fff;
+    }
+    
+    .leadership-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 40px;
+    }
+    
+    .leadership-card {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .leadership-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .leadership-image {
+        height: 800px;
+        width: 500;
+        overflow: hidden;
+    }
+    
+    .leadership-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .leadership-card:hover .leadership-image img {
+        transform: scale(1.05);
+    }
+    /* Full image coverage styles */
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* Optional hover effect */
+.image-container:hover .full-image {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+    .leadership-details {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .leadership-details h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .position {
+        color: #666;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .bio {
+        margin-bottom: 20px;
+        color: #555;
+        line-height: 1.6;
+        flex-grow: 1;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .social-link {
+        width: 36px;
+        height: 36px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    .social-link:hover {
+        background-color: #555;
+    }
+    /* Full image coverage styles */
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.full-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .image-container {
+        height: auto;
+        min-height: 300px;
+    }
+}
+
+/* Optional hover effect */
+.image-container:hover .full-image {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+/* Payment section styles */
+.payment-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.price-summary {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.price-summary p {
+    margin: 8px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-details {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #4a90e2;
+}
+
+.payment-details h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.payment-details p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.payment-details strong {
+    font-weight: 600;
+    color: #444;
+}
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 80px);
+                background-color: var(--primary);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+                transition: left 0.3s;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+                    /* Responsive adjustments */
+            @media screen and (max-width: 768px) {
+                .image-container {
+                    height: auto;
+                    min-height: 300px;
+                }
+            }
+
+            /* Optional hover effect */
+            .image-container:hover .full-image {
+                transform: scale(1.05);
+                transition: transform 0.5s ease;
+            }
+             @media (max-width: 768px) {
+        .leadership-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+     /* Responsive Styles */
+    @media (max-width: 992px) {
+        .portfolio-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .portfolio-items {
+            grid-template-columns: 1fr;
+        }
+        
+        .modal-content {
+            width: 90%;
+            padding: 20px;
+        }
+    }
+    @media (max-width: 768px) {
+        .gallery-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .gallery-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 0;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .services-column {
+                flex: 0 0 100%;
+            }
+
+            .step {
+                flex: 0 0 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/logo.jpeg" alt="Lorem Creative Prints Logo">
+                </div>
+                LOREM <span>CREATIVE PRINTS</span>
+            </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>LOREM CREATIVE PRINTS</h1>
+            <h2>CYBER AND PRINTS</h2>
+            <p>Your one-stop shop for all printing services - from documents to custom merchandise</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Professional printing solutions for all your needs</p>
+            </div>
+            <div class="services-container">
+                <div class="services-column">
+                    <h3>General Services</h3>
+                    <div class="service-item">Lamination & Binding</div>
+                    <div class="service-item">Printing & Photocopy</div>
+                    <div class="service-item">Graphic Design & Logos</div>
+                    <div class="service-item">Scanning</div>
+                    <div class="service-item">E-Citizen</div>
+                    <div class="service-item">Typesetting</div>
+                    <div class="service-item">HELB Services</div>
+                    <div class="service-item">KRA Services</div>
+                </div>
+                <div class="services-column">
+                    <h3>Digital Printing</h3>
+                    <div class="service-item">Business Cards</div>
+                    <div class="service-item">Banners</div>
+                    <div class="service-item">Posters</div>
+                    <div class="service-item">Letterheads</div>
+                    <div class="service-item">Printing (Caps, Mugs)</div>
+                    <div class="service-item">Reflectors, Plates</div>
+                    <div class="service-item">T-shirts, Aprons, Jerseys</div>
+                    <div class="service-item">And Many More</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase -->
+    
+    <section id="products" class="product-showcase">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Check out some of our custom printed products</p>
+            </div>
+            <div class="product-images">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/T-shirt.png" alt="Custom T-Shirts">
+                    </div>
+                    <div class="product-name">T-Shirts</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/mug.jpeg" alt="Custom Mugs">
+                    </div>
+                    <div class="product-name">Mugs</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/business-card.jpg" alt="Business Cards">
+                    </div>
+                    <div class="product-name">Business Cards</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/cap-press.jpg" alt="Custom Caps">
+                    </div>
+                    <div class="product-name">Caps</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/Jersey.png" alt="Custom Jerseys">
+                    </div>
+                    <div class="product-name">Jerseys</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/Banners.jpg" alt="Custom Banners">
+                    </div>
+                    <div class="product-name">Banners</div>
+                </div>
+            </div>
+            <a href="#portfolio" class="btn">Start Your Order</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Shop</h2>
+                <p>High-quality printing solutions for all your needs</p>
+                <p>Our shop is also opened for any special order.Reach us through our Whatsapp provided under contact or place your order in the form after shops</p>
+            </div>
+    
+            <!-- Category Navigation -->
+            <div class="portfolio-nav">
+                <ul>
+                    <li class="active" data-filter="all">All</li>
+                    <li data-filter="tshirts">T-Shirts</li>
+                    <li data-filter="jerseys">Jerseys</li>
+                    <li data-filter="documents">Documents</li>
+                    <li data-filter="mugs">Mugs</li>
+                    <li data-filter="cards">Cards</li>
+                    <li data-filter="graphics">Graphics</li>
+                    <li data-filter="others">Others</li>
+                </ul>
+            </div>
+    
+            <!-- Portfolio Items -->
+            <div class="portfolio-items">
+                <!-- T-Shirts Category -->
+                <div class="portfolio-item tshirts">
+                    <div class="item-image">
+                        <img src="images/singlee.jpeg" alt="Single T-Shirts">
+                    </div>
+                    <div class="item-details">
+                        <h3>Single T-Shirts</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <h4>Light</h4>
+                                <p>Printed: KSh 500</p>
+                                <p>Plain: KSh 400</p>
+                            </div>
+                            <div class="option">
+                                <h4>Medium</h4>
+                                <p>Printed: KSh 600</p>
+                                <p>Plain: KSh 500</p>
+                            </div>
+                            <div class="option">
+                                <h4>Heavy</h4>
+                                <p>Printed: KSh 700</p>
+                                <p>Plain: KSh 600</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="tshirt">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item tshirts">
+                    <div class="item-image">
+                        <img src="images/Bulk T-Shirts .png" alt="Bulk T-Shirts">
+                    </div>
+                    <div class="item-details">
+                        <h3>Bulk T-Shirts (30+ order)</h3>
+                        <p class="discount">KSh 50 discount per shirt</p>
+                        <button class="order-button" data-product="tshirt-bulk">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item tshirts">
+                    <div class="item-image">
+                        <img src="images/polo.jpeg" alt="Polo T-Shirts">
+                    </div>
+                    <div class="item-details">
+                        <h3>Polo T-Shirts</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <h4>Single</h4>
+                                <p>Printed: KSh 800</p>
+                                <p>Plain: KSh 700</p>
+                            </div>
+                            <div class="option">
+                                <h4>Bulk Order</h4>
+                                <p>Printed:@ KSh 750</p>
+                                <p>Plain: @ KSh 650</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="polo-tshirt">Order Now</button>
+                    </div>
+                </div>
+    
+                <!-- Jerseys Category -->
+                <div class="portfolio-item jerseys">
+                    <div class="item-image">
+                        <img src="images/Player Kit Jersey.jpeg" alt="Fan Kit Jersey">
+                    </div>
+                    <div class="item-details">
+                        <h3>Fan Kit Jersey</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Plain: KSh 600</p>
+                                <p>Printed: KSh 800</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="jersey-fan">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item jerseys">
+                    <div class="item-image">
+                        <img src="images/fk.jpg" alt="Player Kit Jersey">
+                    </div>
+                    <div class="item-details">
+                        <h3>Player Kit Jersey</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Plain: KSh 2,000</p>
+                                <p>Printed: KSh 2,500</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="jersey-player">Order Now</button>
+                    </div>
+                </div>
+    
+                <!-- Documents Category -->
+                <div class="portfolio-item documents">
+                    <div class="item-image">
+                        <img src="images/Logo.png" alt="Logo Design">
+                    </div>
+                    <div class="item-details">
+                        <h3>Logo Design</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <h4>Basic</h4>
+                                <p>KSh 1,000</p>
+                            </div>
+                            <div class="option">
+                                <h4>Standard</h4>
+                                <p>KSh 2,000</p>
+                            </div>
+                            <div class="option">
+                                <h4>Premium</h4>
+                                <p>KSh 5,000</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="logo">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item documents">
+                    <div class="item-image">
+                        <img src="images/business-card.jpg" alt="Business Cards">
+                    </div>
+                    <div class="item-details">
+                        <h3>Business Cards</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Single-sided: KSh 500</p>
+                                <p>Double-sided: KSh 1,000</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="business-card">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item documents">
+                    <div class="item-image">
+                        <img src="images/flyer.jpg" alt="Flyers">
+                    </div>
+                    <div class="item-details">
+                        <h3>Flyers</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Single-sided: KSh 1,000</p>
+                                <p>Double-sided: KSh 2,000</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="flyer">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item mugs">
+                    <div class="item-image">
+                        <img src="images/mg.png" alt="Standard Mug">
+                    </div>
+                    <div class="item-details">
+                        <h3>Standard Mug</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Plain: KSh 400</p>
+                                <p>Printed: KSh 600</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="mug-standard">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item mugs">
+                    <div class="item-image">
+                        <img src="images/Magic-Mugs.webp" alt="Magic Mug">
+                    </div>
+                    <div class="item-details">
+                        <h3>Magic Color Changing Mug</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Printed: KSh 1,200</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="mug-magic">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item mugs">
+                    <div class="item-image">
+                        <img src="images/Bulk Mugs.webp" alt="Bulk Mugs">
+                    </div>
+                    <div class="item-details">
+                        <h3>Bulk Mugs (20+ order)</h3>
+                        <p class="discount">KSh 50 discount per mug</p>
+                        <button class="order-button" data-product="mug-bulk">Order Now</button>
+                    </div>
+                </div>
+    
+                <!-- Graphics Category -->
+                <div class="portfolio-item graphics">
+                    <div class="item-image">
+                        <img src="images/social.png" alt="Social Media Graphics">
+                    </div>
+                    <div class="item-details">
+                        <h3>Social Media Graphics</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Single post design: KSh 500</p>
+                                <p>Package of 5 posts: KSh 2,000</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="social-media">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item graphics">
+                    <div class="item-image">
+                        <img src="images/Brochures.jpeg" alt="Brochures">
+                    </div>
+                    <div class="item-details">
+                        <h3>Brochures</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Bi-fold: KSh 1,000</p>
+                                <p>Tri-fold: KSh 2,000</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="brochure">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item graphics">
+                    <div class="item-image">
+                        <img src="images/Poster.jpg" alt="Poster Design">
+                    </div>
+                    <div class="item-details">
+                        <h3>Poster Design</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>A3 Standard: KSh 1,000</p>
+                                <p>Large (A2 and above): KSh 2,000</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="poster">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item graphics">
+                    <div class="item-image">
+                        <img src="images/Website.jpg" alt="Website Graphics">
+                    </div>
+                    <div class="item-details">
+                        <h3>Website Graphics</h3>
+                        <div class="price-options">
+                            <div class="option">
+                                <p>Banners/Header Images: KSh 1,000</p>
+                                <p>Full set of web graphics: KSh 5,000</p>
+                            </div>
+                        </div>
+                        <button class="order-button" data-product="web-graphics">Order Now</button>
+                    </div>
+                </div>
+    
+                <!-- Others Category -->
+                <div class="portfolio-item others">
+                    <div class="item-image">
+                        <img src="images/harambee.png" alt="Harambee Cards">
+                    </div>
+                    <div class="item-details">
+                        <h3>Harambee Cards</h3>
+                        <p>Custom designs for your fundraising events</p>
+                        <button class="order-button" data-product="harambee-card">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item others">
+                    <div class="item-image">
+                        <img src="images/wedding.jpg" alt="Wedding Cards">
+                    </div>
+                    <div class="item-details">
+                        <h3>Wedding Cards</h3>
+                        <p>Elegant designs for your special day</p>
+                        <button class="order-button" data-product="wedding-card">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item others">
+                    <div class="item-image">
+                        <img src="images/inv.avif" alt="Invitation Cards">
+                    </div>
+                    <div class="item-details">
+                        <h3>Invitation Cards</h3>
+                        <p>For graduations, birthdays and special events</p>
+                        <button class="order-button" data-product="invitation-card">Order Now</button>
+                    </div>
+                </div>
+    
+                <div class="portfolio-item others">
+                    <div class="item-image">
+                        <img src="images/webBanners.jpg" alt="Websites & Banners">
+                    </div>
+                    <div class="item-details">
+                        <h3>Websites & Banners</h3>
+                        <p>Custom web design and digital marketing materials</p>
+                        <button class="order-button" data-product="website">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Order Modal -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 id="modalTitle">Order Form</h2>
+                <form id="orderForm2">
+                    <div class="form-group">
+                        <label for="product">Product:</label>
+                        <input type="text" id="product" readonly>
+                    </div>
+    
+                    <div class="form-group" id="typeGroup">
+                        <label for="type">Type:</label>
+                        <select id="type">
+                            <option value="">Select Type</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group" id="sizeGroup">
+                        <label for="size">Size:</label>
+                        <select id="size">
+                            <option value="">Select Size</option>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" min="1" value="1">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="instructions">Special Instructions:</label>
+                        <textarea id="instructions" rows="3"></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="file">Upload Design (if applicable):</label>
+                        <input type="file" id="file">
+                    </div>
+    
+                    <div class="price-summary">
+                        <h3>Price Summary</h3>
+                        <p>Base Price: <span id="basePrice">KSh 0</span></p>
+                        <p>Quantity: <span id="quantityDisplay">1</span></p>
+                        <p>Total: <span id="totalPrice">KSh 0</span></p>
+                    </div>
+                    <div class="payment-section">
+                        
+                        <div class="payment-details">
+                            <h4>Payment Details</h4>
+                            <p><strong>Paybill:</strong> 542542</p>
+                            <p><strong>Account number:</strong> 25503</p>
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="submit-button">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Getting your print job done is easy with our simple process</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <h3>Choose Your Service</h3>
+                    <p>Select from our wide range of printing services that fits your needs.</p>
+                </div>
+                <div class="step">
+                    <h3>Upload Your Files</h3>
+                    <p>Upload your design files or visit us in-store for assistance with your design.</p>
+                </div>
+                <div class="step">
+                    <h3>Confirm Your Order</h3>
+                    <p>Review your order details and confirm your printing specifications.</p>
+                </div>
+                <div class="step">
+                    <h3>Collect Your Prints</h3>
+                    <p>Pick up your high-quality prints at our shop or choose delivery options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="upload">
+        <div class="container">
+            <div class="section-title">
+                <h2>Start Your Special Orders here </h2>
+                <p>Upload your files and tell us what you need.We got you </p>
+            </div>
+            <div class="upload-section">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="Client_Name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="Client_email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="Client_phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Type</label>
+                        <select id="service" class="form-control" required>
+                            <option value="">Select a service</option>
+                            <option value="document">Document Printing</option>
+                            <option value="tshirt">T-Shirt Printing</option>
+                            <option value="business">Business Cards</option>
+                            <option value="banner">Banners</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Upload Your Design</label>
+                        <div class="file-upload">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag and drop files here or click to browse</p>
+                            <input type="file" id="file" style="display: none;">
+                        </div>
+                        <div id="filePreview" class="mt-2" style="display: none;">
+                            <p>Selected file: <span id="fileName"></span></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Instructions</label>
+                        <textarea id="message" class="form-control" rows="4"></textarea>
+                    </div>
+                    Hidden input for WhatsApp number 
+                    <input type="hidden" id="whatsapp" value="0746202620">
+                    <button type="submit" class="btn" id="submitBtn">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <div class="icon-container">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Loremprints@gmail.com</p>
+                        <a href="mailto:Loremprints@gmail.com" class="contact-btn">Send Message</a>
+                    </div>
+    
+                    <div class="contact-card">
+                        <div class="icon-container">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </div>
+                        <h3>Messenger</h3>
+                        <p>Loremprints</p>
+                        <a href="https://m.me/Loremprints" class="contact-btn">Send Message</a>
+                    </div>
+    
+                    <div class="contact-card">
+                        <div class="icon-container">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>Whatsapp</h3>
+                        <p>Loremprints@gmail.com</p>
+                        <a href="https://wa.me/+254746202620" class="contact-btn">Send Message</a>
+                    </div>
+    
+                    <div class="contact-card">
+                        <div class="icon-container">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+254746202620</p>
+                        <p>+254798191329</p>
+                        <a href="tel:0746202620" class="contact-btn">Call Now</a>
+                    </div>
+    
+                    <div class="contact-card">
+                        <div class="icon-container">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Kisumu Ndogo, Kisii</p>
+                        <a href="https://maps.google.com/?q=Kisumu+Ndogo,+Kisii" class="contact-btn">View Map</a>
+                    </div>
+                </div>
+    
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Leadership Section -->
+    <section class="team-leadership" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Leadership</h2>
+                <p>Meet the visionaries behind our success</p>
+            </div>
+    
+            <div class="leadership-grid">
+                <!-- CEO -->
+                <div class="leadership-card">
+                    <div class="leadership-image">
+                        <img src="images/seth.jpeg" alt="Seth Blessings">
+                    </div>
+                    <div class="leadership-details">
+                        <h3>Seth Blessings</h3>
+                    <!--    <p class="position">Director of Operations</p> -->
+                        <p class="bio">With over 15 years of experience in the printing industry, Seth leads our company
+                            with vision and innovation. His dedication to quality and customer satisfaction has been the
+                            driving force behind our growth.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:seth@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Director -->
+                <div class="leadership-card">
+                    <div class="leadership-image">
+                        <img src="images/Odhis.jpeg" alt="E. Odhiambo">
+                    </div>
+                    <div class="leadership-details">
+                        <h3>H. Odhiambo</h3>
+                    <!--    <p class="position">Director of Operations</p> -->
+                        <p class="bio">H. Odhiambo oversees our day-to-day operations with exceptional attention to detail.
+                            His expertise in process optimization ensures that we deliver top-quality products efficiently
+                            and on time.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:odhiambo@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lorem Creative Prints. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Navigation
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+
+                // Close mobile menu when clicking a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+
+            // Back to Top Button
+            const backToTopButton = document.querySelector('.back-to-top');
+
+            if (backToTopButton) {
+                window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add('active');
+                    } else {
+                        backToTopButton.classList.remove('active');
+                    }
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // ===== CONTACT FORM (FIRST FORM) =====
+            const fileInput = document.getElementById('file');
+            const fileUpload = document.querySelector('.file-upload');
+            const filePreview = document.getElementById('filePreview');
+            const fileName = document.getElementById('fileName');
+            const orderForm = document.getElementById('orderForm');
+
+            // Handle file upload UI
+            if (fileUpload && fileInput) {
+                fileUpload.addEventListener('click', function () {
+                    fileInput.click();
+                });
+
+                fileUpload.addEventListener('dragover', function (e) {
+                    e.preventDefault();
+                    fileUpload.classList.add('dragover');
+                });
+
+                fileUpload.addEventListener('dragleave', function () {
+                    fileUpload.classList.remove('dragover');
+                });
+
+                fileUpload.addEventListener('drop', function (e) {
+                    e.preventDefault();
+                    fileUpload.classList.remove('dragover');
+                    fileInput.files = e.dataTransfer.files;
+                    updateFilePreview();
+                });
+
+                fileInput.addEventListener('change', function () {
+                    updateFilePreview();
+                });
+            }
+
+            function updateFilePreview() {
+                if (fileInput && fileInput.files && fileInput.files.length > 0 && fileName) {
+                    fileName.textContent = fileInput.files[0].name;
+                    if (filePreview) filePreview.style.display = 'block';
+                } else if (filePreview) {
+                    filePreview.style.display = 'none';
+                }
+            }
+
+            // Handle FIRST form submission (Contact/Order Form)
+            if (orderForm) {
+                orderForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Get form values
+                    const name = document.getElementById('Client_Name').value;
+                    const email = document.getElementById('Client_email').value;
+                    const phone = document.getElementById('Client_phone').value;
+                    const service = document.getElementById('service').value;
+                    const message = document.getElementById('message').value;
+
+                    // Get WhatsApp number from the form or use a default
+                    const whatsappNumber = document.getElementById('whatsapp') ?
+                        document.getElementById('whatsapp').value : '254746202620';
+
+                    // Create order summary
+                    const orderSummary = `
+*New Order Request*
+
+*Customer Information:*
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+
+*Order Details:*
+Service: ${service}
+Message: ${message}
+`;
+
+                    // Add selected filename if available
+                    let fileInfo = "";
+                    if (fileInput && fileInput.files && fileInput.files.length > 0) {
+                        fileInfo = `\n*File:* ${fileInput.files[0].name}`;
+                    }
+
+                    // Prepare the complete message for WhatsApp
+                    const completeMessage = `${orderSummary}${fileInfo}`;
+
+                    // Show order preview
+                    const confirmed = confirm(`Please review your order before sending to WhatsApp:
+
+${completeMessage}
+
+Click OK to send or Cancel to edit.`);
+
+                    if (confirmed) {
+                        // Encode the message for WhatsApp
+                        const whatsappMessage = encodeURIComponent(completeMessage);
+
+                        // Format WhatsApp number - ensure it has the country code
+                        let formattedNumber = whatsappNumber;
+                        if (!formattedNumber.startsWith('+')) {
+                            // Add Kenya country code if not present
+                            formattedNumber = formattedNumber.startsWith('0') ?
+                                '+254' + formattedNumber.substring(1) :
+                                '+254' + formattedNumber;
+                        }
+
+                        // Remove any spaces or + symbols from the number
+                        formattedNumber = formattedNumber.replace(/[\s+]/g, '');
+
+                        const whatsappUrl = `https://wa.me/${formattedNumber}?text=${whatsappMessage}`;
+
+                        // Open WhatsApp with the message
+                        window.open(whatsappUrl, '_blank');
+
+                        alert("Order submitted! You'll be redirected to WhatsApp to complete your order. Please send the file separately after sending the message.");
+                    }
+                });
+            }
+
+            // ===== PRODUCT CATALOG AND MODAL (SECOND FORM) =====
+            // Product data with prices
+            const productData = {
+                "tshirt": {
+                    title: "Single T-Shirt",
+                    types: [
+                        { name: "Light - Plain", price: 400 },
+                        { name: "Light - Printed", price: 500 },
+                        { name: "Medium - Plain", price: 500 },
+                        { name: "Medium - Printed", price: 600 },
+                        { name: "Heavy - Plain", price: 600 },
+                        { name: "Heavy - Printed", price: 700 }
+                    ],
+                    needsSize: true
+                },
+                "tshirt-bulk": {
+                    title: "Bulk T-Shirts (30+ order)",
+                    types: [
+                        { name: "Light - Plain", price: 350 },
+                        { name: "Light - Printed", price: 450 },
+                        { name: "Medium - Plain", price: 450 },
+                        { name: "Medium - Printed", price: 550 },
+                        { name: "Heavy - Plain", price: 550 },
+                        { name: "Heavy - Printed", price: 650 }
+                    ],
+                    needsSize: true,
+                    minQuantity: 30
+                },
+
+
+                //polo-tshirt
+
+                "polo-tshirt": {
+                    title: "Polo T-Shirts (20+ order)",
+                    types: [
+                        { name: "Single - Plain", price: 700 },
+                        { name: "Single - Printed", price: 800 },
+                        { name: "Bulk Order - Plain", price: 650 },
+                        { name: "Bulk Order - Printed", price: 750 },
+                       
+                    ],
+                    needsSize: true,
+                    minQuantity: 20
+                },
+
+
+
+                "jersey-fan": {
+                    title: "Fan Kit Jersey",
+                    types: [
+                        { name: "Plain", price: 600 },
+                        { name: "Printed", price: 800 }
+                    ],
+                    needsSize: true
+                },
+                "jersey-player": {
+                    title: "Player Kit Jersey",
+                    types: [
+                        { name: "Plain", price: 2000 },
+                        { name: "Printed", price: 2500 }
+                    ],
+                    needsSize: true
+                },
+                "logo": {
+                    title: "Logo Design",
+                    types: [
+                        { name: "Basic", price: 1000 },
+                        { name: "Standard", price: 2000 },
+                        { name: "Premium", price: 5000 }
+                    ],
+                    needsSize: false
+                },
+                "business-card": {
+                    title: "Business Card",
+                    types: [
+                        { name: "Single-sided", price: 500 },
+                        { name: "Double-sided", price: 1000 }
+                    ],
+                    needsSize: false
+                },
+                "flyer": {
+                    title: "Flyer",
+                    types: [
+                        { name: "Single-sided", price: 1000 },
+                        { name: "Double-sided", price: 2000 }
+                    ],
+                    needsSize: false
+                },
+                "social-media": {
+                    title: "Social Media Graphics",
+                    types: [
+                        { name: "Single post design", price: 500 },
+                        { name: "Package of 5 posts", price: 2000 }
+                    ],
+                    needsSize: false
+                },
+                "brochure": {
+                    title: "Brochure",
+                    types: [
+                        { name: "Bi-fold", price: 1000 },
+                        { name: "Tri-fold", price: 2000 }
+                    ],
+                    needsSize: false
+                },
+                "poster": {
+                    title: "Poster Design",
+                    types: [
+                        { name: "A3 Standard", price: 1000 },
+                        { name: "Large (A2 and above)", price: 2000 }
+                    ],
+                    needsSize: false
+                },
+                "web-graphics": {
+                    title: "Website Graphics",
+                    types: [
+                        { name: "Banners/Header Images", price: 1000 },
+                        { name: "Full set of web graphics", price: 5000 }
+                    ],
+                    needsSize: false
+                },
+                "harambee-card": {
+                    title: "Harambee Card",
+                    types: [
+                        { name: "Standard", price: 800 },
+                        { name: "Premium", price: 1500 }
+                    ],
+                    needsSize: false
+                },
+                "wedding-card": {
+                    title: "Wedding Card",
+                    types: [
+                        { name: "Standard", price: 1000 },
+                        { name: "Premium", price: 2000 },
+                        { name: "Luxury", price: 3500 }
+                    ],
+                    needsSize: false
+                },
+                "invitation-card": {
+                    title: "Invitation Card",
+                    types: [
+                        { name: "Graduation", price: 800 },
+                        { name: "Birthday", price: 700 },
+                        { name: "Special Event", price: 1000 }
+                    ],
+                    needsSize: false
+                },
+                "mug-standard": {
+                    title: "Standard Mug",
+                    types: [
+                        { name: "Plain", price: 400 },
+                        { name: "Printed", price: 600 }
+                    ],
+                    needsSize: false
+                },
+                "mug-magic": {
+                    title: "Magic Color Changing Mug",
+                    types: [
+                        { name: "Printed", price: 1200 }
+                    ],
+                    needsSize: false
+                },
+                "mug-bulk": {
+                    title: "Bulk Mugs",
+                    types: [
+                        { name: "Plain", price: 350 },
+                        { name: "Printed", price: 550 }
+                    ],
+                    needsSize: false,
+                    minQuantity: 20
+                },
+                "website": {
+                    title: "Website & Banner",
+                    types: [
+                        { name: "Banner only", price: 1500 },
+                        { name: "Basic Website", price: 10000 },
+                        { name: "Standard Website", price: 20000 },
+                        { name: "E-commerce Website", price: 35000 }
+                    ],
+                    needsSize: false
+                }
+            };
+
+            // Portfolio filtering
+            const filterButtons = document.querySelectorAll('.portfolio-nav li');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            if (filterButtons.length > 0 && portfolioItems.length > 0) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        // Remove active class from all buttons
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        // Add active class to clicked button
+                        this.classList.add('active');
+
+                        const filterValue = this.getAttribute('data-filter');
+
+                        portfolioItems.forEach(item => {
+                            if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+
+            // Modal functionality
+            const modal = document.getElementById('orderModal');
+            const orderButtons = document.querySelectorAll('.order-button');
+            const closeModal = document.querySelector('.close-modal');
+
+            if (modal) {
+                // Find the form inside the modal - Get the actual orderForm, not orderForm2
+                const modalOrderForm = document.querySelector('#orderModal form');
+
+                const modalTitle = document.getElementById('modalTitle');
+                const productInput = document.getElementById('product');
+                const typeSelect = document.getElementById('type');
+                const sizeGroup = document.getElementById('sizeGroup');
+                const quantityInput = document.getElementById('quantity');
+                const basePrice = document.getElementById('basePrice');
+                const quantityDisplay = document.getElementById('quantityDisplay');
+                const totalPrice = document.getElementById('totalPrice');
+
+                // Open modal when order button is clicked
+                if (orderButtons.length > 0) {
+                    orderButtons.forEach(button => {
+                        button.addEventListener('click', function () {
+                            const productId = this.getAttribute('data-product');
+                            const product = productData[productId];
+
+                            if (!product) {
+                                console.error(`Product with ID ${productId} not found.`);
+                                return;
+                            }
+
+                            // Set modal title and product input
+                            if (modalTitle) modalTitle.textContent = `Order ${product.title}`;
+                            if (productInput) productInput.value = product.title;
+
+                            // Clear and populate type select
+                            if (typeSelect) {
+                                typeSelect.innerHTML = '<option value="">Select Type</option>';
+                                product.types.forEach(type => {
+                                    const option = document.createElement('option');
+                                    option.value = type.name;
+                                    option.textContent = `${type.name} - KSh ${type.price}`;
+                                    option.setAttribute('data-price', type.price);
+                                    typeSelect.appendChild(option);
+                                });
+                            }
+
+                            // Show/hide size field based on product type
+                            if (sizeGroup) {
+                                if (product.needsSize) {
+                                    sizeGroup.style.display = 'block';
+                                } else {
+                                    sizeGroup.style.display = 'none';
+                                }
+                            }
+
+                            // Set minimum quantity if applicable
+                            if (quantityInput) {
+                                if (product.minQuantity) {
+                                    quantityInput.min = product.minQuantity;
+                                    quantityInput.value = product.minQuantity;
+                                } else {
+                                    quantityInput.min = 1;
+                                    quantityInput.value = 1;
+                                }
+                            }
+
+                            // Reset price displays
+                            if (basePrice) basePrice.textContent = 'KSh 0';
+                            if (quantityDisplay) quantityDisplay.textContent = quantityInput ? quantityInput.value : '1';
+                            if (totalPrice) totalPrice.textContent = 'KSh 0';
+
+                            // Show modal
+                            modal.style.display = 'block';
+                        });
+                    });
+                }
+
+                // Close modal when X is clicked
+                if (closeModal) {
+                    closeModal.addEventListener('click', function () {
+                        modal.style.display = 'none';
+                    });
+                }
+
+                // Close modal when clicking outside
+                window.addEventListener('click', function (event) {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+
+                // Update price when type or quantity changes
+                if (typeSelect && quantityInput) {
+                    typeSelect.addEventListener('change', updatePrice);
+                    quantityInput.addEventListener('input', updatePrice);
+                }
+
+                function updatePrice() {
+                    if (!typeSelect || !quantityInput || !basePrice || !quantityDisplay || !totalPrice) return;
+
+                    const selectedOption = typeSelect.options[typeSelect.selectedIndex];
+
+                    if (selectedOption && selectedOption.value !== '') {
+                        const price = parseInt(selectedOption.getAttribute('data-price'));
+                        const quantity = parseInt(quantityInput.value);
+
+                        basePrice.textContent = `KSh ${price}`;
+                        quantityDisplay.textContent = quantity;
+                        totalPrice.textContent = `KSh ${price * quantity}`;
+                    } else {
+                        basePrice.textContent = 'KSh 0';
+                        totalPrice.textContent = 'KSh 0';
+                    }
+                }
+
+                // Form submission for MODAL FORM (Product Order Form)
+                // This is the key change - using the correct form reference and correct field IDs
+                if (modalOrderForm) {
+                    modalOrderForm.addEventListener('submit', function (event) {
+                        event.preventDefault();
+
+                        // Validate form
+                        if (!validateProductForm()) {
+                            return;
+                        }
+
+                        // Get form data using the actual IDs from the HTML
+                        const product = productInput ? productInput.value : '';
+                        const type = typeSelect ? typeSelect.value : '';
+
+                        // Use the actual ID 'size' from your HTML
+                        const size = (document.getElementById('size') && sizeGroup && sizeGroup.style.display !== 'none')
+                            ? document.getElementById('size').value
+                            : 'N/A';
+
+                        const quantity = quantityInput ? quantityInput.value : '1';
+
+                        // Use the actual ID 'instructions' from your HTML
+                        const instructions = document.getElementById('instructions')
+                            ? document.getElementById('instructions').value
+                            : '';
+
+                        // Use the actual IDs from your HTML for customer info
+                        const name = document.getElementById('name') ? document.getElementById('name').value : '';
+                        const email = document.getElementById('email') ? document.getElementById('email').value : '';
+                        const phone = document.getElementById('phone') ? document.getElementById('phone').value : '';
+
+                        // Get price information
+                        let priceInfo = '';
+                        let totalPriceValue = 0;
+
+                        if (typeSelect) {
+                            const selectedOption = typeSelect.options[typeSelect.selectedIndex];
+                            if (selectedOption && selectedOption.hasAttribute('data-price')) {
+                                const price = parseInt(selectedOption.getAttribute('data-price'));
+                                totalPriceValue = price * parseInt(quantity);
+
+                                priceInfo = `*Price Summary:*\n`;
+                                priceInfo += `- Base Price: KSh ${price}\n`;
+                                priceInfo += `- Total: KSh ${totalPriceValue}\n\n`;
+                            }
+                        }
+
+                        // Compose WhatsApp message
+                        let message = `*New Product Order:*\n\n`;
+                        message += `*Product:* ${product}\n`;
+                        message += `*Type:* ${type}\n`;
+
+                        if (sizeGroup && sizeGroup.style.display !== 'none') {
+                            message += `*Size:* ${size}\n`;
+                        }
+
+                        message += `*Quantity:* ${quantity}\n`;
+                        message += priceInfo;
+
+                        if (instructions) {
+                            message += `*Special Instructions:*\n${instructions}\n\n`;
+                        }
+
+                        message += `*Customer Details:*\n`;
+                        message += `- Name: ${name}\n`;
+                        message += `- Email: ${email}\n`;
+                        message += `- Phone: ${phone}\n\n`;
+
+                        message += `*Payment Details:*\n`;
+                        message += `- Paybill: 542542\n`;
+                        message += `- Account number: 25503`;
+
+                        // Show confirmation with order information
+                        const confirmed = confirm(`Please review your order before sending to WhatsApp:
+
+${message}
+
+Click OK to send or Cancel to edit.`);
+
+                        if (confirmed) {
+                            // Encode the message for WhatsApp
+                            const encodedMessage = encodeURIComponent(message);
+
+                            // Your WhatsApp number - replace with your actual number
+                            const whatsappNumber = "254746202620"; // Replace with your actual number
+
+                            // Create WhatsApp link
+                            const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+                            // Open WhatsApp in a new tab
+                            window.open(whatsappLink, '_blank');
+
+                            // Close the modal
+                            modal.style.display = 'none';
+
+                            // Reset form
+                            modalOrderForm.reset();
+                        }
+                    });
+                }
+
+                function validateProductForm() {
+                    // Basic validation
+                    if (typeSelect && typeSelect.value === '') {
+                        alert('Please select a product type.');
+                        return false;
+                    }
+
+                    const sizeField = document.getElementById('size');
+                    if (sizeGroup && sizeGroup.style.display !== 'none' && sizeField && sizeField.value === '') {
+                        alert('Please select a size.');
+                        return false;
+                    }
+
+                    if (quantityInput && quantityInput.value < parseInt(quantityInput.min)) {
+                        alert(`Minimum quantity is ${quantityInput.min}.`);
+                        return false;
+                    }
+
+                    // Use the actual IDs from your HTML
+                    const nameField = document.getElementById('name');
+                    if (nameField && !nameField.value.trim()) {
+                        alert('Please enter your name.');
+                        return false;
+                    }
+
+                    const emailField = document.getElementById('email');
+                    if (emailField && !emailField.value.trim()) {
+                        alert('Please enter your email.');
+                        return false;
+                    }
+
+                    const phoneField = document.getElementById('phone');
+                    if (phoneField && !phoneField.value.trim()) {
+                        alert('Please enter your phone number.');
+                        return false;
+                    }
+
+                    return true;
+                }
+            }
+        });
+        </script>
+</body>
+
+</html>
